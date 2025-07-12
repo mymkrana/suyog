@@ -618,16 +618,14 @@
             <span data-lang="en" style="display:none">Whether you want to volunteer, host an event, or support our programs, there are many ways to get involved with SUYOG's mission.</span>
         </p>
         
-        <div class="cta-buttons">
-            <a href="#" class="btn">
-                <span data-lang="hi">ब्लॉग करें</span>
-                <span data-lang="en" style="display:none">Become a Volunteer</span>
-            </a>
-            <a href="#" class="btn btn-primary">
-                <span data-lang="hi">एक इवेंट की अनुरोध करें</span>
-                <span data-lang="en" style="display:none">Request an Event</span>
-            </a>
-        </div>
+        <a href="#" class="btn" id="openVolunteerBtn">
+            <span data-lang="hi">ब्लॉग करें</span>
+            <span data-lang="en" style="display:none">Become a Volunteer</span>
+        </a>
+        <a href="#" class="btn btn-primary" id="openEventRequestBtn">
+            <span data-lang="hi">एक इवेंट की अनुरोध करें</span>
+            <span data-lang="en" style="display:none">Request an Event</span>
+        </a>
     </section>
     
     <!-- Footer -->
@@ -829,6 +827,81 @@
       </div>
     </div>
     <!-- End Volunteer Modal -->
+    
+    <!-- Event Request Modal Popup -->
+    <div id="eventRequestModal" class="modal-overlay" style="display:none;">
+      <div class="modal-box">
+        <button class="modal-close" id="closeEventRequestModal">&times;</button>
+        <h2 style="text-align:center;">
+            <span data-lang="hi">अपने गाँव के लिए SUYOG सत्र का अनुरोध करें</span>
+            <span data-lang="en" style="display:none">Invite SUYOG to Your Village Session Type</span>
+        </h2>
+        <form class="volunteer-form">
+          <label for="session-type">
+            <span data-lang="hi">सत्र प्रकार <span style='color:red'>*</span></span>
+            <span data-lang="en" style="display:none">Session Type <span style='color:red'>*</span></span>
+          </label>
+          <select id="session-type" name="session-type" required>
+            <option value="">
+                <span data-lang="hi">सत्र प्रकार चुनें</span>
+                <span data-lang="en" style="display:none">Select session type</span>
+            </option>
+            <option>
+                <span data-lang="hi">मोटिवेशनल सेशन</span>
+                <span data-lang="en" style="display:none">Motivational Session</span>
+            </option>
+            <option>
+                <span data-lang="hi">करियर गाइडेंस</span>
+                <span data-lang="en" style="display:none">Career Guidance</span>
+            </option>
+            <option>
+                <span data-lang="hi">शैक्षिक कार्यशाला</span>
+                <span data-lang="en" style="display:none">Educational Workshop</span>
+            </option>
+            <option>
+                <span data-lang="hi">अन्य</span>
+                <span data-lang="en" style="display:none">Other</span>
+            </option>
+          </select>
+
+          <label for="preferred-date">
+            <span data-lang="hi">पसंदीदा तिथि <span style='color:red'>*</span></span>
+            <span data-lang="en" style="display:none">Preferred Date <span style='color:red'>*</span></span>
+          </label>
+          <input type="date" id="preferred-date" name="preferred-date" required>
+
+          <label for="event-location">
+            <span data-lang="hi">स्थान (गाँव/शहर, जिला, राज्य) <span style='color:red'>*</span></span>
+            <span data-lang="en" style="display:none">Location (Village/Town, District, State) <span style='color:red'>*</span></span>
+          </label>
+          <input type="text" id="event-location" name="event-location" required>
+
+          <label for="organizer-name">
+            <span data-lang="hi">आयोजक का नाम <span style='color:red'>*</span></span>
+            <span data-lang="en" style="display:none">Organizer's Name <span style='color:red'>*</span></span>
+          </label>
+          <input type="text" id="organizer-name" name="organizer-name" required>
+
+          <label for="contact-number">
+            <span data-lang="hi">संपर्क नंबर <span style='color:red'>*</span></span>
+            <span data-lang="en" style="display:none">Contact Number <span style='color:red'>*</span></span>
+          </label>
+          <input type="tel" id="contact-number" name="contact-number" required pattern="[0-9]{10,15}">
+
+          <label for="email-address">
+            <span data-lang="hi">ईमेल पता <span style='color:red'>*</span></span>
+            <span data-lang="en" style="display:none">Email Address <span style='color:red'>*</span></span>
+          </label>
+          <input type="email" id="email-address" name="email-address" required>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:16px;">
+            <span data-lang="hi">अनुरोध सबमिट करें</span>
+            <span data-lang="en" style="display:none">Submit Request</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- End Event Request Modal -->
     
     <script src="script.js"></script>
 </body>

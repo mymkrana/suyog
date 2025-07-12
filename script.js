@@ -2,11 +2,13 @@
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const nav = document.getElementById('nav');
 
-mobileMenuBtn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    mobileMenuBtn.innerHTML = nav.classList.contains('active') ? 
-        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-});
+if (mobileMenuBtn && nav) {
+    mobileMenuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenuBtn.innerHTML = nav.classList.contains('active') ? 
+            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+}
 
 // Header Scroll Effect
 const header = document.getElementById('header');
@@ -180,3 +182,23 @@ if (langHiBtns.length && langEnBtns.length) {
     dotsContainer.appendChild(dot);
   }
 })(); 
+
+// Event Request Modal Popup Logic
+const eventRequestModal = document.getElementById('eventRequestModal');
+const openEventRequestBtn = document.getElementById('openEventRequestBtn');
+const closeEventRequestModal = document.getElementById('closeEventRequestModal');
+
+if (openEventRequestBtn && eventRequestModal && closeEventRequestModal) {
+    openEventRequestBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        eventRequestModal.style.display = 'flex';
+    });
+    closeEventRequestModal.addEventListener('click', function() {
+        eventRequestModal.style.display = 'none';
+    });
+    eventRequestModal.addEventListener('click', function(e) {
+        if (e.target === eventRequestModal) {
+            eventRequestModal.style.display = 'none';
+        }
+    });
+} 
