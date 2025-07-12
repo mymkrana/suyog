@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUYOG - Empowering Rural Youth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-dots"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="mobile-lang-switcher">
+            <div class="mobile-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="lang-switcher">
+                <button id="lang-hi-mobile" class="lang-btn active">हिंदी</button>
+                <button id="lang-en-mobile" class="lang-btn">English</button>
+            </div>
+        </div>
+        <a href="#" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            SUYOG
+        </a>
+        <nav id="nav">
+            <a href="#karnal"><span data-lang="hi">संस्थापक</span><span data-lang="en" style="display:none">Founder</span></a>
+            <a href="#vision"><span data-lang="hi">दृष्टि</span><span data-lang="en" style="display:none">Vision</span></a>
+            <a href="#pillars"><span data-lang="hi">स्तंभ</span><span data-lang="en" style="display:none">Pillars</span></a>
+            <a href="#programs"><span data-lang="hi">कार्यक्रम</span><span data-lang="en" style="display:none">Programs</span></a>
+            <a href="#team"><span data-lang="hi">टीम</span><span data-lang="en" style="display:none">Team</span></a>
+            <a href="#contact"><span data-lang="hi">संपर्क</span><span data-lang="en" style="display:none">Contact</span></a>
+            <a href="#" class="btn btn-primary"><span data-lang="hi">दान करें</span><span data-lang="en" style="display:none">Donate</span></a>
+        </nav>
+        <div class="header-right-group">
+            <div class="lang-switcher">
+                <button id="lang-hi-desktop" class="lang-btn active">हिंदी</button>
+                <button id="lang-en-desktop" class="lang-btn">English</button>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    
+    <!-- Hero Slider -->
+    <section class="hero">
+        <div class="slider-container">
+            <!-- Old background-image slider code (commented out) -->
+            <!--
+            <div class="slider-track">
+                <!-- Slide 0 (New) -->
+                <div class="slide active" style="background-image: url('image/slider/karn-slider1.png');">
+                    <div class="slide-content">
+                        <h1>Colonel Kirori Singh Bainsla</h1>
+                        <p>Visionary leader and founder of SUYOG, inspiring rural youth across India.</p>
+                        <a href="#karnal" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="slide" style="background-image: url('image/slider/karn-slider2.png');">
+                    <div class="slide-content">
+                        <h1>Empowering Rural Youth</h1>
+                        <p>Through education, skill development and community building, we're transforming lives across rural India.</p>
+                        <a href="#programs" class="btn btn-primary">Our Programs</a>
+                    </div>
+                </div>
+            </div>
+            -->
+            <!-- New slider with <img> tags -->
+            <div class="slider-track">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="image/slider/karn-slider1.png" alt="Colonel Kirori Singh Bainsla" class="slider-img">
+                    <div class="slide-content">
+                        <h1>
+                            <span data-lang="hi">कर्नल किरोरी सिंह बैंसला</span>
+                            <span data-lang="en" style="display:none">Colonel Kirori Singh Bainsla</span>
+                        </h1>
+                        <p>
+                            <span data-lang="hi">विज़नरी नेता और SUYOG का संस्थापक, भारत के ग्रामीण युवा को प्रेरित करता है।</span>
+                            <span data-lang="en" style="display:none">Visionary leader and founder of SUYOG, inspiring rural youth across India.</span>
+                        </p>
+                        <a href="#karnal" class="btn btn-primary">
+                            <span data-lang="hi">और जानें</span>
+                            <span data-lang="en" style="display:none">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="image/slider/karn-slider2.png" alt="Empowering Rural Youth" class="slider-img">
+                    <div class="slide-content">
+                        <h1>
+                            <span data-lang="hi">ग्रामीण युवा को पावर देना</span>
+                            <span data-lang="en" style="display:none">Empowering Rural Youth</span>
+                        </h1>
+                        <p>
+                            <span data-lang="hi">शिक्षा, कौशल विकास और समुदाय निर्माण के माध्यम से, हम ग्रामीण भारत के जीवनों को बदल रहे हैं।</span>
+                            <span data-lang="en" style="display:none">Through education, skill development and community building, we're transforming lives across rural India.</span>
+                        </p>
+                        <a href="#programs" class="btn btn-primary">
+                            <span data-lang="hi">हमारे कार्यक्रम</span>
+                            <span data-lang="en" style="display:none">Our Programs</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="slider-arrow prev" id="prevSlide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" id="nextSlide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="slider-nav">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+        </div>
+    </section>
+    
+    <!-- Karnal Kirori Singh Bainsla Section -->
+    <section class="karnal-section" id="karnal">
+        <div class="karnal-content">
+            <div class="karnal-image">
+                <img src="image/karnal.png" alt="Colonel Kirori Singh Bainsla">
+            </div>
+            
+            <div class="karnal-text">
+                <h2>
+                    <span data-lang="hi">कर्नल किरोरी सिंह बैंसला</span>
+                    <span data-lang="en" style="display:none">Colonel Kirori Singh Bainsla</span>
+                </h2>
+                <h3>
+                    <span data-lang="hi">संस्थापक की दृष्टिकोण</span>
+                    <span data-lang="en" style="display:none">Founder's Vision for SUYOG</span>
+                </h3>
+                
+                <p>
+                    <span data-lang="hi">कर्नल किरोरी सिंह बैंसला, एक विज़नरी नेता और सामाजिक अपराध शोधकर्ता, जनवरी 1, 2012 को SUYOG का संस्थापक बनाकर एक बदलता दृष्टिकोण लाया। उनका सशक्त बैठक और ग्रामीण चुनने के विषय में गहरी समझ से SUYOG का अद्भुत दृष्टिकोण युवा विकास को प्रभावित करता है।</span>
+                    <span data-lang="en" style="display:none">Colonel Kirori Singh Bainsla, a visionary leader and social reformer, founded SUYOG on January 1, 2012 with a transformative mission to empower rural youth across India. His military background and deep understanding of rural challenges shaped SUYOG's unique approach to youth development.</span>
+                </p>
+                
+                <p>
+                    <span data-lang="hi">कर्नल बैंसला ने ग्रामीण युवा में अधिकांश संभाविति को अवश्य छोड़ने की वजह से जो बचत है उसे जानकारी और अवसरों की कमी के कारण छोड़ दिया। उन्होंने SUYOG को एक ब्रिज के रूप में देखा जो ग्रामीण भारत से श्रेष्ठ सरकारी सेवाओं और उच्च शिक्षा अवसरों को जोड़ता था।</span>
+                    <span data-lang="en" style="display:none">Colonel Bainsla recognized the immense potential in rural youth that often remained untapped due to lack of awareness and opportunities. He envisioned SUYOG as a bridge that would connect talented youth from villages to prestigious government services and higher education opportunities.</span>
+                </p>
+                
+                <div class="quote">
+                    <p>
+                        <span data-lang="hi">"सच्ची पावर हमारे ग्रामीण युवा को ज्ञान, अवसर और विश्वास के साथ उपलब्ध करने पर आती है जब हम उन्हें ज्ञान, अवसर और उनके पूरे समुदायों को बदलने के लिए उपकरण देते हैं।"</span>
+                        <span data-lang="en" style="display:none">"True empowerment comes when we equip our rural youth with knowledge, opportunities, and the confidence to transform not just their own lives, but their entire communities."</span>
+                    </p>
+                </div>
+                
+                <p>
+                    <span data-lang="hi">उनके नेतृत्व में, SUYOG छोटी एक प्रारंभिक अभियान से देश के भीतर एक राष्ट्रीय आंदोलन में बढ़ गई है, ओवर 100 स्थानों में ओवर 9 राज्यों में मोटिवेशनल कोचिंग सेशन करते हुए। कर्नल बैंसला का हाथ है जो से SUYOG ग्रामीण भारत की वास्तविकताओं में जुड़ा है जबकि विश्वास करता है कि SUYOG एक उत्कृष्टता की दिशा में जारी रहता है।</span>
+                    <span data-lang="en" style="display:none">Under his leadership, SUYOG has grown from a small initiative to a nationwide movement, conducting motivational counseling sessions in over 100 locations across 9 states. Colonel Bainsla's hands-on approach has ensured that SUYOG remains grounded in the realities of rural India while aspiring for excellence.</span>
+                </p>
+                
+                <div class="signature">
+                    <div class="signature-line"></div>
+                    <div class="signature-text">
+                        <span data-lang="hi">कर्नल किरोरी सिंह बैंसला</span>
+                        <span data-lang="en" style="display:none">Colonel Kirori Singh Bainsla</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="vision-impact">
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                    </svg>
+                </div>
+                <h4>
+                    <span data-lang="hi">शिक्षा प्रवाह</span>
+                    <span data-lang="en" style="display:none">Educational Access</span>
+                </h4>
+                <p>
+                    <span data-lang="hi">ग्रामीण छात्रों के लिए गुणवत्ता शिक्षा के मार्ग बनाना</span>
+                    <span data-lang="en" style="display:none">Creating pathways to quality education for rural students</span>
+                </p>
+            </div>
+            
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17 9H7V7h10m0 6H7v-2h10m-3 6H7v-2h7M12 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m7 0h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <h4>
+                    <span data-lang="hi">करियर सलाह</span>
+                    <span data-lang="en" style="display:none">Career Guidance</span>
+                </h4>
+                <p>
+                    <span data-lang="hi">सरकारी सेवाओं और करियर के लिए विशेषज्ञ सलाह</span>
+                    <span data-lang="en" style="display:none">Expert counseling for government services and careers</span>
+                </p>
+            </div>
+            
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                    </svg>
+                </div>
+                <h4>
+                    <span data-lang="hi">समुदाय विकास</span>
+                    <span data-lang="en" style="display:none">Community Development</span>
+                </h4>
+                <p>
+                    <span data-lang="hi">ग्रामीण विकास के माध्यम से ग्रामीण विश्वास को बदलना</span>
+                    <span data-lang="en" style="display:none">Transforming villages through youth empowerment</span>
+                </p>
+            </div>
+            
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17 3h4v2h-4v4h-2V5h-4V3h4V0h2v3zm-5 4.83c1.07.44 2.03 1.08 2.85 1.87l-1.42 1.42A6.98 6.98 0 0 0 12 10c-1.93 0-3.68.78-4.95 2.05l-1.42-1.42C6.98 8.48 9.36 7 12 7c.7 0 1.37.1 2 .3V3h2v4.83zM11 14h2v6h-2v-6zm-8 0h2v6H3v-6zm16 0h2v6h-2v-6z"/>
+                    </svg>
+                </div>
+                <h4>
+                    <span data-lang="hi">राज्य विस्तार</span>
+                    <span data-lang="en" style="display:none">Nationwide Reach</span>
+                </h4>
+                <p>
+                    <span data-lang="hi">9 राज्यों में ओवर 10K+ जीवन प्रभावित करते हैं</span>
+                    <span data-lang="en" style="display:none">Programs across 9 states impacting thousands</p>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vision Section -->
+    <section class="vision" id="vision">
+        <div class="section-title">
+            <h2>
+                <span data-lang="hi">SUYOG की दृष्टि</span>
+                <span data-lang="en" style="display:none">SUYOG's Vision</span>
+            </h2>
+            <p class="subtitle">
+                <span data-lang="hi">ग्रामीण समुदायों को होलिस्टिक विकास के माध्यम से बदलना</span>
+                <span data-lang="en" style="display:none">Transforming rural communities through holistic development</span>
+            </p>
+        </div>
+        
+        <div class="vision-content">
+            <div class="vision-text">
+                <h3>
+                    <span data-lang="hi">ग्रामीण युवा को शिक्षा और अवसर के माध्यम से पावर देना</span>
+                    <span data-lang="en" style="display:none">Empowering Rural Youth Through Education and Opportunity</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">बदलते कार्यक्रमों के माध्यम से, SUYOG हर ग्रामीण युवा की संभाविति को जल्द ही देता है जब उन्हें शिक्षा, कौशल विकास, संस्कृति और एक सहबद्धता का संबंध देता है।</span>
+                    <span data-lang="en" style="display:none">Through transformative programs, SUYOG aims to ignite the potential of every rural youth by giving them access to education, skill-building, cultural pride, and a sense of belonging.</span>
+                </p>
+                <p>
+                    <span data-lang="hi">2012 से हम टॉन्क के एक छोटे से प्रारंभिक अभियान से ओवर 9 राज्यों में ओवर 10K+ जीवनों को हमारे संपूर्ण विकास कार्यक्रमों के माध्यम से प्रभावित करते हैं जो शिक्षा, रोजगार, स्वास्थ्य और संस्कृति संरक्षण को जोड़ते हैं।</span>
+                    <span data-lang="en" style="display:none">Since 2012, we've grown from a small initiative in Tonk to a movement spanning 9 states, impacting thousands of lives through our comprehensive development programs that address education, employment, health, and cultural preservation.</span>
+                </p>
+                <a href="#" class="btn btn-primary">
+                    <span data-lang="hi">हमारी कहानी</span>
+                    <span data-lang="en" style="display:none">Our Story</span>
+                </a>
+            </div>
+            
+            <div class="vision-image">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SUYOG students learning">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pillars Section -->
+    <section class="pillars" id="pillars">
+        <div class="section-title">
+            <h2>
+                <span data-lang="hi">हमारे प्रगति के बिल्डिंग ब्लॉक</span>
+                <span data-lang="en" style="display:none">Our Pillars of Progress</span>
+            </h2>
+            <p class="subtitle">
+                <span data-lang="hi">हमारे काम में ग्रामीण समुदायों में काम करने वाले पांच आधारभूत क्षेत्र</span>
+                <span data-lang="en" style="display:none">Five foundational areas that guide our work in rural communities</span>
+            </p>
+        </div>
+        
+        <div class="pillars-container">
+            <!-- Education -->
+            <div class="pillar-card">
+                <div class="pillar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                    </svg>
+                </div>
+                <h3>
+                    <span data-lang="hi">शिक्षा</span>
+                    <span data-lang="en" style="display:none">Education</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">ग्रामीण समुदायों में शिक्षा के केंद्रों, लाइब्रेरी और डिजिटल शिक्षा के माध्यम से अंतर को बंधना</span>
+                    <span data-lang="en" style="display:none">Bridging the gap through access to learning centers, libraries, and digital education in rural communities.</span>
+                </p>
+            </div>
+            
+            <!-- Employment -->
+            <div class="pillar-card">
+                <div class="pillar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10 2h4a2 2 0 012 2v2h4a2 2 0 012 2v5.53a5.72 5.72 0 00-2-1.19V8H4v11h8.08c.12.72.37 1.39.72 2H4a2 2 0 01-2-2V8a2 2 0 012-2h4V4a2 2 0 012-2m4 4V4h-4v2h4m-3 7h1.5v3.63l3.5-1.5.5.86-4.5 2.04V13m3.5 5.75c-.95 0-1.75-.8-1.75-1.75s.8-1.75 1.75-1.75 1.75.8 1.75 1.75-.8 1.75-1.75 1.75m0-3.5c-.95 0-1.75.8-1.75 1.75a1.75 1.75 0 003.5 0c0-.95-.8-1.75-1.75-1.75z"/>
+                    </svg>
+                </div>
+                <h3>
+                    <span data-lang="hi">रोजगार</span>
+                    <span data-lang="en" style="display:none">Employment</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">ग्रामीण युवा के लिए वॉकेशनल ट्रेनिंग और रखने के कार्यक्रमों के माध्यम से अवसर बनाना</span>
+                    <span data-lang="en" style="display:none">Creating opportunities through vocational training and placement programs for rural youth.</span>
+                </p>
+            </div>
+            
+            <!-- Culture & Heritage -->
+            <div class="pillar-card">
+                <div class="pillar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 2c3 0 5.5 1.6 6.9 4H5.1C6.5 5.6 9 4 12 4m0 16c-3 0-5.5-1.6-6.9-4h13.8c-1.4 2.4-3.9 4-6.9 4M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                </div>
+                <h3>
+                    <span data-lang="hi">संस्कृति और विश्वविद्या</span>
+                    <span data-lang="en" style="display:none">Culture & Heritage</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">ग्रामीण विश्वविद्या के माध्यम से भारत की गहरी ग्रामीण संस्कृति को जोड़ना और संचालन करना</span>
+                    <span data-lang="en" style="display:none">Reviving and preserving India's rich rural traditions through community engagement.</span>
+                </p>
+            </div>
+            
+            <!-- Community Development -->
+            <div class="pillar-card">
+                <div class="pillar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 5.5A3.5 3.5 0 0115.5 9a3.5 3.5 0 01-3.5 3.5A3.5 3.5 0 018.5 9 3.5 3.5 0 0112 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 01-3-3 3 3 0 013-3m14 0a3 3 0 013 3 3 3 0 01-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 001.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75z"/>
+                    </svg>
+                </div>
+                <h3>
+                    <span data-lang="hi">समुदाय विकास</span>
+                    <span data-lang="en" style="display:none">Community Development</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">स्थानीय नेतृत्व और सहयोगी विकास के माध्यम से स्थानीय विश्वास को बढ़ाना</span>
+                    <span data-lang="en" style="display:none">Fostering local leadership and collective growth through participatory approaches.</span>
+                </p>
+            </div>
+            
+            <!-- Health & Environment -->
+            <div class="pillar-card">
+                <div class="pillar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm0 5.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5z"/>
+                    </svg>
+                </div>
+                <h3>
+                    <span data-lang="hi">स्वास्थ्य और पर्यावरण</span>
+                    <span data-lang="en" style="display:none">Health & Environment</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">ग्रामीण समुदायों में सतत और स्वस्थ जीवन अभ्यासों को बढ़ाना</span>
+                    <span data-lang="en" style="display:none">Promoting sustainable and healthy living practices in rural communities.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Impact Section -->
+    <section class="impact">
+        <div class="section-title">
+            <h2>
+                <span data-lang="hi">2012 से हमारा अंतर करना</span>
+                <span data-lang="en" style="display:none">Making a Difference Since 2012</span>
+            </h2>
+        </div>
+        
+        <div class="impact-stats">
+            <div class="stat-item">
+                <div class="stat-number">9+</div>
+                <div class="stat-label">
+                    <span data-lang="hi">राज्य पहुंचे</span>
+                    <span data-lang="en" style="display:none">States Reached</span>
+                </div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">
+                    <span data-lang="hi">ग्रामीण बदले</span>
+                    <span data-lang="en" style="display:none">Villages Transformed</span>
+                </div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">
+                    <span data-lang="hi">जीवन प्रभावित</span>
+                    <span data-lang="en" style="display:none">Lives Impacted</span>
+                </div>
+            </div>
+            
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">
+                    <span data-lang="hi">कार्यक्रम करें</span>
+                    <span data-lang="en" style="display:none">Programs Conducted</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="section-title">
+            <h2>
+                <span data-lang="hi">फीचर्ड कार्यक्रम और इवेंट्स</span>
+                <span data-lang="en" style="display:none">Featured Programs & Events</span>
+            </h2>
+        </div>
+        
+        <div class="programs-container">
+            <!-- Program 1 -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SUYOG Rural Youth Festival">
+                </div>
+                <div class="program-content">
+                    <span class="program-date">Jan 12, 2024</span>
+                    <h3>
+                        <span data-lang="hi">SUYOG ग्रामीण युवा फीस्टिवल</span>
+                        <span data-lang="en" style="display:none">SUYOG Rural Youth Festival</span>
+                    </h3>
+                    <div class="program-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                        </svg>
+                        <span>Bikaner, Rajasthan</span>
+                    </div>
+                    <p>
+                        <span data-lang="hi">ग्रामीण शैली और कौशलों के साथ 1000+ प्रतिनिधि भाग लेते हैं जिसमें राजस्थान के भरपूर हिस्से से होते हैं।</span>
+                        <span data-lang="en" style="display:none">Celebrating rural traditions and talents with over 1000 participants from across Rajasthan.</span>
+                    </p>
+                    <a href="#" class="btn">
+                        <span data-lang="hi">फोटो देखें</span>
+                        <span data-lang="en" style="display:none">View Photos</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Program 2 -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Library Launch Drive">
+                </div>
+                <div class="program-content">
+                    <span class="program-date">Aug 5, 2023</span>
+                    <h3>
+                        <span data-lang="hi">लाइब्रेरी लाउंच ड्राइव</span>
+                        <span data-lang="en" style="display:none">Library Launch Drive</span>
+                    </h3>
+                    <div class="program-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                        </svg>
+                        <span>Alwar, Rajasthan</span>
+                    </div>
+                    <p>
+                        <span data-lang="hi">10 नए समुदाय लाइब्रेरी खोली गई जो लाइब्रेरी और शिक्षा संसाधनों के प्रवेश को ग्रामीण बच्चों के लिए अधिकार देती है।</span>
+                        <span data-lang="en" style="display:none">10 new community libraries opened to empower village children with access to books and learning resources.</span>
+                    </p>
+                    <a href="#" class="btn">
+                        <span data-lang="hi">फोटो देखें</span>
+                        <span data-lang="en" style="display:none">View Photos</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Program 3 -->
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Career Guidance Workshop">
+                </div>
+                <div class="program-content">
+                    <span class="program-date">Mar 14, 2024</span>
+                    <h3>
+                        <span data-lang="hi">करियर गाइडेंस वर्कशॉप</span>
+                        <span data-lang="en" style="display:none">Career Guidance Workshop</span>
+                    </h3>
+                    <div class="program-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                        </svg>
+                        <span>Mundia Learning Centre</span>
+                    </div>
+                    <p>
+                        <span data-lang="hi">300+ छात्रों को उच्च शिक्षा और कौशल-आधारित करियर के लिए उद्योग विशेषज्ञों के साथ गाइड किया गया।</span>
+                        <span data-lang="en" style="display:none">300+ students guided for higher education and skill-based careers with industry experts.</span>
+                    </p>
+                    <a href="#" class="btn">
+                        <span data-lang="hi">फोटो देखें</span>
+                        <span data-lang="en" style="display:none">View Photos</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-title">
+            <h2>
+                <span data-lang="hi">हमारी टीम मिलें</span>
+                <span data-lang="en" style="display:none">Meet the Team</span>
+            </h2>
+        </div>
+        
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="image/karnal.png" alt="Col. Kirori Singh Bainsla">
+                </div>
+                <div class="member-info">
+                    <h3>
+                        <span data-lang="hi">कॉल. किरोरी सिंह बैंसला (रिट्ड)</span>
+                        <span data-lang="en" style="display:none">Col. Kirori Singh Bainsla (Retd)</span>
+                    </h3>
+                    <p class="position">
+                        <span data-lang="hi">संस्थापक</span>
+                        <span data-lang="en" style="display:none">Founder</span>
+                    </p>
+                    <p class="bio">
+                        <span data-lang="hi">विज़नरी नेता और सामाजिक अपराध शोधकर्ता, कॉल. बैंसला SUYOG को शिक्षा और भारत के ग्रामीण समुदाय को जोड़ने के लिए बनाया।</span>
+                        <span data-lang="en" style="display:none">Visionary leader and social reformer, Col. Bainsla founded SUYOG to bring education and unity to rural India.</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Rajesh Meena">
+                </div>
+                <div class="member-info">
+                    <h3>
+                        <span data-lang="hi">राजेश मीना</span>
+                        <span data-lang="en" style="display:none">Rajesh Meena</span>
+                    </h3>
+                    <p class="position">
+                        <span data-lang="hi">अध्यक्ष</span>
+                        <span data-lang="en" style="display:none">President</span>
+                    </p>
+                    <p class="bio">
+                        <span data-lang="hi">एक ग्रामीण विश्वास के लिए काम करने वाला ग्रामीण विश्वास विकास और रोजगार कार्यक्रमों पर काम करता है।</span>
+                        <span data-lang="en" style="display:none">A committed grassroots leader working on youth skill development and employment programs.</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Anita Sharma">
+                </div>
+                <div class="member-info">
+                    <h3>
+                        <span data-lang="hi">अनीता शर्मा</span>
+                        <span data-lang="en" style="display:none">Anita Sharma</span>
+                    </h3>
+                    <p class="position">
+                        <span data-lang="hi">सामान्य सेक्रेटरी</span>
+                        <span data-lang="en" style="display:none">General Secretary</span>
+                    </p>
+                    <p class="bio">
+                        <span data-lang="hi">सभी राज्यों में शिक्षा और स्वास्थ्य कार्यक्रमों को जल्द ही दूर देता है जिसके लिए बलवानता और आग्रह है।</span>
+                        <span data-lang="en" style="display:none">Drives the education and health programs across all states with passion and dedication.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 50px;">
+            <a href="#" class="btn btn-primary">
+                <span data-lang="hi">पूरी टीम देखें</span>
+                <span data-lang="en" style="display:none">View Full Team</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>
+            <span data-lang="hi">हमारे आंदोलन में शामिल हों</span>
+            <span data-lang="en" style="display:none">Join Our Movement</span>
+        </h2>
+        <p>
+            <span data-lang="hi">चाहे आप ब्लॉग करें, एक इवेंट आयोजित करें या हमारे कार्यक्रमों का समर्थन करें, हमारे आंदोलन के अनुसार विभिन्न तरीकों से शामिल होने के लिए अच्छे तरीके हैं।</span>
+            <span data-lang="en" style="display:none">Whether you want to volunteer, host an event, or support our programs, there are many ways to get involved with SUYOG's mission.</span>
+        </p>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn">
+                <span data-lang="hi">ब्लॉग करें</span>
+                <span data-lang="en" style="display:none">Become a Volunteer</span>
+            </a>
+            <a href="#" class="btn btn-primary">
+                <span data-lang="hi">एक इवेंट की अनुरोध करें</span>
+                <span data-lang="en" style="display:none">Request an Event</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>
+                    <span data-lang="hi">SUYOG के बारे में</span>
+                    <span data-lang="en" style="display:none">About SUYOG</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">2012 से ग्रामीण युवा को शिक्षा, रोजगार अवसरों और संस्कृति संरक्षण के माध्यम से पावर देना।</span>
+                    <span data-lang="en" style="display:none">Empowering rural youth through education, employment opportunities, and cultural preservation since 2012.</span>
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>
+                    <span data-lang="hi">त्वरित लिंक</span>
+                    <span data-lang="en" style="display:none">Quick Links</span>
+                </h3>
+                <ul class="footer-links">
+                    <li><a href="#karnal">
+                        <span data-lang="hi">संस्थापक</span>
+                        <span data-lang="en" style="display:none">Founder</span>
+                    </a></li>
+                    <li><a href="#vision">
+                        <span data-lang="hi">हमारी दृष्टि</span>
+                        <span data-lang="en" style="display:none">Our Vision</span>
+                    </a></li>
+                    <li><a href="#pillars">
+                        <span data-lang="hi">हमारा दृष्टिकोण</span>
+                        <span data-lang="en" style="display:none">Our Approach</span>
+                    </a></li>
+                    <li><a href="#programs">
+                        <span data-lang="hi">कार्यक्रम</span>
+                        <span data-lang="en" style="display:none">Programs</span>
+                    </a></li>
+                    <li><a href="#team">
+                        <span data-lang="hi">हमारी टीम</span>
+                        <span data-lang="en" style="display:none">Our Team</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span data-lang="hi">दान करें</span>
+                        <span data-lang="en" style="display:none">Donate</span>
+                    </a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>
+                    <span data-lang="hi">संपर्क करें</span>
+                    <span data-lang="en" style="display:none">Contact Us</span>
+                </h3>
+                <p><i class="fas fa-map-marker-alt"></i>
+                    <span data-lang="hi">टॉन्क, राजस्थान, भारत</span>
+                    <span data-lang="en" style="display:none">Tonk, Rajasthan, India</span>
+                </p>
+                <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                <p><i class="fas fa-envelope"></i> info@suyogindia.org</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>
+                    <span data-lang="hi">संवाद अधिकार</span>
+                    <span data-lang="en" style="display:none">Newsletter</span>
+                </h3>
+                <p>
+                    <span data-lang="hi">हमारे कार्यक्रमों और प्रभाव को अपडेट करने के लिए हमारे न्यूजलेटर को सदस्यता लें।</span>
+                    <span data-lang="en" style="display:none">Subscribe to our newsletter to stay updated on our programs and impact.</span>
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn btn-primary">
+                        <span data-lang="hi">सदस्यता लें</span>
+                        <span data-lang="en" style="display:none">Subscribe</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 SUYOG. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Volunteer Modal Popup -->
+    <div id="volunteerModal" class="modal-overlay" style="display:none;">
+      <div class="modal-box">
+        <button class="modal-close" id="closeVolunteerModal">&times;</button>
+        <h2>
+            <span data-lang="hi">एक ब्लॉगर के रूप में शामिल हों</span>
+            <span data-lang="en" style="display:none">Become a Volunteer</span>
+        </h2>
+        <form class="volunteer-form">
+          <div class="vol-row">
+            <div class="vol-field">
+              <label for="volunteer-name">
+                <span data-lang="hi">पूरा नाम</span>
+                <span data-lang="en" style="display:none">Full Name</span>
+              </label>
+              <input type="text" id="volunteer-name" name="name" required>
+            </div>
+            <div class="vol-field">
+              <label for="volunteer-profession">
+                <span data-lang="hi">पेशा</span>
+                <span data-lang="en" style="display:none">Profession</span>
+              </label>
+              <input type="text" id="volunteer-profession" name="profession" required>
+            </div>
+          </div>
+
+          <label for="volunteer-location">
+            <span data-lang="hi">स्थान</span>
+            <span data-lang="en" style="display:none">Location</span>
+          </label>
+          <input type="text" id="volunteer-location" name="location" required>
+
+          <label for="volunteer-area">
+            <span data-lang="hi">क्षेत्र का विषय</span>
+            <span data-lang="en" style="display:none">Area of Interest</span>
+          </label>
+          <select id="volunteer-area" name="area" required>
+            <option value="">
+                <span data-lang="hi">क्षेत्र का विषय चुनें</span>
+                <span data-lang="en" style="display:none">Select area of interest</span>
+            </option>
+            <option>
+                <span data-lang="hi">शिक्षा</span>
+                <span data-lang="en" style="display:none">Education</span>
+            </option>
+            <option>
+                <span data-lang="hi">इवेंट प्रबंधन</span>
+                <span data-lang="en" style="display:none">Event Management</span>
+            </option>
+            <option>
+                <span data-lang="hi">संस्कृति और विश्वविद्या</span>
+                <span data-lang="en" style="display:none">Culture & Heritage</span>
+            </option>
+            <option>
+                <span data-lang="hi">स्वास्थ्य ज्ञान</span>
+                <span data-lang="en" style="display:none">Health Awareness</span>
+            </option>
+            <option>
+                <span data-lang="hi">पर्यावरण</span>
+                <span data-lang="en" style="display:none">Environment</span>
+            </option>
+            <option>
+                <span data-lang="hi">अन्य</span>
+                <span data-lang="en" style="display:none">Other</span>
+            </option>
+          </select>
+
+          <label for="volunteer-skills">
+            <span data-lang="hi">कौशल/विशेषज्ञता</span>
+            <span data-lang="en" style="display:none">Skills/Expertise</span>
+          </label>
+          <textarea id="volunteer-skills" name="skills" rows="3" required></textarea>
+
+          <label for="volunteer-availability">
+            <span data-lang="hi">उपलब्धता</span>
+            <span data-lang="en" style="display:none">Availability</span>
+          </label>
+          <select id="volunteer-availability" name="availability" required>
+            <option value="">
+                <span data-lang="hi">उपलब्धता चुनें</span>
+                <span data-lang="en" style="display:none">Select availability</span>
+            </option>
+            <option>
+                <span data-lang="hi">वेंडस और शनिवार</span>
+                <span data-lang="en" style="display:none">Weekends</span>
+            </option>
+            <option>
+                <span data-lang="hi">सप्ताहदिन</span>
+                <span data-lang="en" style="display:none">Weekdays</span>
+            </option>
+            <option>
+                <span data-lang="hi">दोनों</span>
+                <span data-lang="en" style="display:none">Both</span>
+            </option>
+            <option>
+                <span data-lang="hi">अन्य</span>
+                <span data-lang="en" style="display:none">Other</span>
+            </option>
+          </select>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:16px;">
+            <span data-lang="hi">जमा करें</span>
+            <span data-lang="en" style="display:none">Submit</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- End Volunteer Modal -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
